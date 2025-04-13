@@ -1,0 +1,22 @@
+name: meetingmom
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10  # safer than 3.13 for most packages
+  - pip
+  - ffmpeg
+  - sox
+  - cmake
+  - pkg-config
+  - sentencepiece  # installed via conda
+  - pip:
+      - git+https://github.com/openai/whisper.git
+      - torch
+      - torchaudio
+      - pyannote.audio
+      - ffmpeg-python
+      - transformers
+      - accelerate
+      - requests
+      - python-dotenv
